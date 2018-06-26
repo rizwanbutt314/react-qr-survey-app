@@ -1,0 +1,20 @@
+.logoContent {
+    margin-top: 72px;
+}
+
+/* .centerContent {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  } */
+
+@media only screen and (min-width: 2300px) {
+    .logoContent {
+        margin-top: 172px;
+    }
+}

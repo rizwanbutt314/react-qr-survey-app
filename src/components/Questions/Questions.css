@@ -1,0 +1,26 @@
+.question {
+    position: absolute;
+    margin: auto;
+    margin-top: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    padding: 35px;
+}
+
+.c {
+    margin-top: 150px;
+}
+
+@media only screen and (min-width: 2300px) {
+    .c {
+        margin-top: 300px;
+    }
+    .question {
+        width: 95%;
+        padding: 70px;
+    }
+}
