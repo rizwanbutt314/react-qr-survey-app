@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import QrReader from 'react-qr-reader';
 import { Segment, Grid, Header } from 'semantic-ui-react';
-import { Redirect } from 'react-router-dom';
 
 import './QRScanner.css';
 
@@ -31,7 +30,7 @@ class QR extends Component {
   }
   render(){
     return(
-    <div className="question c qr">
+    <div className="question c qr centerContent">
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>

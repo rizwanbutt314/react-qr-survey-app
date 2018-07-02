@@ -49,7 +49,7 @@
   
   .input-range__label--value {
     position: absolute;
-    display:block;
+    display:none;
     top: -1.8rem; }
   
   .input-range__label-container {

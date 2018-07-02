@@ -1,8 +1,8 @@
 import React from 'react';
 import InputRange from 'react-input-range';
 
-// import './slider.css';
-import 'react-input-range/lib/css/index.css';
+import './slider.css';
+// import 'react-input-range/lib/css/index.css';
 
 class Range extends React.Component {
     constructor(props) {
@@ -14,7 +14,7 @@ class Range extends React.Component {
     render() {
       return (
         <div>
-          <span style={{fontSize:'18px',color:'grey'}}>
+          <span style={{fontSize:'35px',color:'grey'}}>
             {this.state.value}
           </span><br/>
           <br/>

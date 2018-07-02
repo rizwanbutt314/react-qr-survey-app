@@ -13,8 +13,8 @@ class Video extends Component {
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={10}>
-              <Header as='h2' color='teal' textAlign='center'>
+          <Grid.Column width={16}>
+              <Header as='h1' color='teal' textAlign='center' style={{fontSize: '60px'}}>
                 Product Listing
               </Header>
           </Grid.Column>
@@ -25,7 +25,7 @@ class Video extends Component {
                 <Grid.Column width={16}/>
                 <Grid.Column width={16} />
                     <Grid.Row>
-                    <Grid.Column width={12}>
+                    <Grid.Column width={14}>
                         <Embed 
                             id='jaOqOPo_aJc' 
                             autoplay={true}
@@ -37,7 +37,7 @@ class Video extends Component {
                         </Grid.Row>
                     <Grid.Row style={{backgroundColor: 'gainsboro'}}>
                         <Grid.Column width={8}>
-                        <Link to="/final"><Button size='large' primary>Continue</Button></Link>
+                        <Link to="/final"><Button size='massive' primary>Continue</Button></Link>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Column width={16} />

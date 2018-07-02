@@ -9,15 +9,15 @@ class Q2 extends Component {
   render(){
       
     return(
-    <div className="question c">
+    <div className="question c centerContent">
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={10}>
-              <Header as='h2' color='teal' textAlign='center'>
+          <Grid.Column width={16}>
+              <Header as='h1' color='teal' textAlign='center' style={{fontSize: '60px'}}>
                     Question 2 / 5
               </Header>
-              <Header as='h3' color='teal' textAlign='center'>
+              <Header as='h2' color='teal' textAlign='center' style={{fontSize: '45px'}}>
                     Select your favorite hero
               </Header>
           </Grid.Column>
@@ -31,7 +31,7 @@ class Q2 extends Component {
                         <Grid.Column width={8}>
                         <Form.Field>
                             <Radio
-                                style={{fontSize: '20px'}}
+                                style={{fontSize: '40px', float: 'left'}}
                                 label='Monaco'
                                 name='radioGroup'
                                 value='this'
@@ -43,7 +43,7 @@ class Q2 extends Component {
                         <Grid.Column width={8}>
                         <Form.Field>
                             <Radio
-                                style={{fontSize: '20px'}}
+                                style={{fontSize: '40px'}}
                                 label='Milan'
                                 name='radioGroup'
                                 value='this'
@@ -57,7 +57,7 @@ class Q2 extends Component {
                         <Grid.Column width={8}>
                         <Form.Field>
                             <Radio
-                                style={{fontSize: '20px'}}
+                                style={{fontSize: '40px', float: 'left'}}
                                 label='Paris'
                                 name='radioGroup'
                                 value='this'
@@ -69,7 +69,7 @@ class Q2 extends Component {
                         <Grid.Column width={8}>
                         <Form.Field>
                             <Radio
-                                style={{fontSize: '20px'}}
+                                style={{fontSize: '40px'}}
                                 label='Torino'
                                 name='radioGroup'
                                 value='this'
@@ -83,8 +83,8 @@ class Q2 extends Component {
                     <Grid.Column width={16} />
                     <Grid.Row>
                         <Grid.Column>
-                        <Link to="/q1"><Button size='large' primary>Prev</Button></Link>
-                        <Link to="/q3"><Button size='large' primary>Next</Button></Link>
+                        <Link to="/q1"><Button size='massive' primary>Prev</Button></Link>
+                        <Link to="/q3"><Button size='massive' primary>Next</Button></Link>
                         </Grid.Column>
                     </Grid.Row>                    
                 </Grid>

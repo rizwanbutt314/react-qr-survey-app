@@ -9,13 +9,13 @@ class Final extends Component {
   render(){
       
     return(
-    <div className="question c">
+    <div className="question c centerContent">
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>
           <Grid.Column width={10}>
-              <Header as='h2' color='teal' textAlign='center'>
-              Thank you
+              <Header as='h1' color='teal' textAlign='center' style={{fontSize: '60px'}}>
+                Thank you
               </Header>
           </Grid.Column>
           </Grid.Row>
@@ -26,7 +26,7 @@ class Final extends Component {
                 <Grid.Column width={16} />
                     <Grid.Row style={{backgroundColor: 'gainsboro'}}>
                         <Grid.Column width={8}>
-                        <Link to="/"><Button size='large' primary>Finish Survey</Button></Link>
+                        <Link to="/"><Button size='massive' primary>Finish Survey</Button></Link>
                         </Grid.Column>
                     
                     </Grid.Row>

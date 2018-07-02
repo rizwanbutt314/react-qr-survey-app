@@ -12,17 +12,25 @@ class Layout extends Component {
             <Aux>
                     <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
                         <Grid.Row className="logoContent">
-                        <Grid.Column width={10}>
-                            <Header as='h1' color='teal' textAlign='center'>
+                        <Grid.Column width={16}>
+                            <Grid.Row style={{display: 'inline-flex'}}>
                                <Image src={logo} />
-                            </Header>
+                            </Grid.Row>
                         </Grid.Column>
-                        </Grid.Row>
+                        <Grid.Column width={16}>
+                            <Grid.Row>
+                                <main style={{marginTop: '150px'}}>
+                                    {this.props.children}
+                                </main>
+                            </Grid.Row>
+                        </Grid.Column>
+                    </Grid.Row>
+                        
                     </Grid>
-             
-                <main>
+
+                {/* <main style={{marginTop: '50px'}}>
                     {this.props.children}
-                </main>
+                </main> */}
             </Aux>
          );
     }

@@ -7,24 +7,3 @@ body {
   background-image: url('./assets/images/bg.gif'); 
   background-size: cover;
 }
-
-
-
-/* body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #888;
-  line-height: 30px;
-  text-align: center;
-background-image: url('../img/bg.gif');
-  background-size: cover;
-} */
-
-
-@media only screen and (min-width: 2100px) {
-  body {
-      font-size: 50px;
-      font-weight: 700;
-  }
-}

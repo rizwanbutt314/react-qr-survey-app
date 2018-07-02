@@ -9,15 +9,15 @@ class Q3 extends Component {
   render(){
       
     return(
-    <div className="question c">
+    <div className="question c centerContent">
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={10}>
-              <Header as='h2' color='teal' textAlign='center'>
+          <Grid.Column width={16}>
+              <Header as='h1' color='teal' textAlign='center' style={{fontSize: '60px'}}>
                     Question 3 / 5
               </Header>
-              <Header as='h3' color='teal' textAlign='center'>
+              <Header as='h2' color='teal' textAlign='center' style={{fontSize: '45px'}}>
                     I consider Louis Vuitton a Prestegius Brand? 
               </Header>
           </Grid.Column>
@@ -38,8 +38,8 @@ class Q3 extends Component {
                     <Grid.Column width={16} />
                     <Grid.Row>
                         <Grid.Column>
-                        <Link to="/q2"><Button size='large' primary>Prev</Button></Link>
-                        <Link to="/q4"><Button size='large' primary>Next</Button></Link>
+                        <Link to="/q2"><Button size='massive' primary>Prev</Button></Link>
+                        <Link to="/q4"><Button size='massive' primary>Next</Button></Link>
                         </Grid.Column>
                     </Grid.Row>                    
                 </Grid>

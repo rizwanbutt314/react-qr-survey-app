@@ -13,15 +13,15 @@ class Q5 extends Component {
     const { rating } = this.state;
     
     return(
-    <div className="question c">
+    <div className="question c centerContent">
     <Segment>  
         <Grid textAlign='center' style={{ height: '100%' }} container stackable verticalAlign='middle'>
         <Grid.Row>
-          <Grid.Column width={10}>
-              <Header as='h2' color='teal' textAlign='center'>
+          <Grid.Column width={16}>
+              <Header as='h1' color='teal' textAlign='center' style={{fontSize: '60px'}}>
                     Question 5 / 5
               </Header>
-              <Header as='h3' color='teal' textAlign='center'>
+              <Header as='h2' color='teal' textAlign='center' style={{fontSize: '45px'}}>
                     How many different product did you see?
               </Header>
           </Grid.Column>
@@ -46,8 +46,8 @@ class Q5 extends Component {
                     <Grid.Column width={16} />
                     <Grid.Row>
                         <Grid.Column>
-                        <Link to="/q4"><Button size='large' primary>Prev</Button></Link>
-                        <Link to="/video"><Button size='large' primary>Next</Button></Link>
+                        <Link to="/q4"><Button size='massive' primary>Prev</Button></Link>
+                        <Link to="/video"><Button size='massive' primary>Next</Button></Link>
                         </Grid.Column>
                     </Grid.Row>                    
                 </Grid>
