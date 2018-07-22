@@ -43,7 +43,7 @@ class QR extends Component {
         formData.append('username', res[0]);
         formData.append('password', res[1]);
   
-        fetch('http://localhost:8080/server/main.php', {
+        fetch('https://qr-survey-app.herokuapp.com/server/main.php', {
         method: 'POST',
         body: formData 
         }).then(function(response) {
