@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Segment, Grid, Header, Form, Radio, GridColumn, Button, Checkbox } from 'semantic-ui-react';
+import { Segment, Grid, Header, Form, Button, Checkbox } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 
 import './Questions.css';

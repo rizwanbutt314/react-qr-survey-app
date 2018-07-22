@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, Grid, Header } from 'semantic-ui-react';
+import { Image, Grid } from 'semantic-ui-react';
 
 import Aux from '../_Aux/_Aux';
 import './Layout.css';

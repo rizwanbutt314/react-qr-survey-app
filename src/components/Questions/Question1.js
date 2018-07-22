@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import { Container, Segment, Grid, Header, Form, Radio, GridColumn, Button } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Segment, Grid, Header, Form, Radio, Button } from 'semantic-ui-react';
+import { Redirect } from 'react-router-dom';
 
 import './Questions.css';
 
 class Question1 extends Component {
- 
+    state = {next : false}
+    handleChange = (e, { value }) => this.setState({ value })
+    handleSubmit = (e) => {
+        e.preventDefault();
+        if(this.state.value) {
+            this.setState({next : true});
+        } else {
+            alert("Please select a value to continue");
+        }
+    }
   render(){
       
     return(
@@ -34,9 +43,9 @@ class Question1 extends Component {
                                 style={{fontSize: '40px'}}
                                 label='1846'
                                 name='radioGroup'
-                                value='this'
-                                // checked={this.state.value === 'this'}
-                                // onChange={this.handleChange}
+                                value='1846'
+                                checked={this.state.value === '1846'}
+                                onChange={this.handleChange}
                             />
                             </Form.Field>
                         </Grid.Column>
@@ -46,24 +55,24 @@ class Question1 extends Component {
                                 style={{fontSize: '40px'}}
                                 label='1893'
                                 name='radioGroup'
-                                value='this'
-                                // checked={this.state.value === 'this'}
-                                // onChange={this.handleChange}
+                                value='1893'
+                                checked={this.state.value === '1893'}
+                                onChange={this.handleChange}
                             />
                             </Form.Field>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row style={{backgroundColor: 'gainsboro'}}>
                         <Grid.Column width={8}>
-                        <Form.Field>
-                            <Radio
-                                style={{fontSize: '40px'}}
-                                label='1901'
-                                name='radioGroup'
-                                value='this'
-                                // checked={this.state.value === 'this'}
-                                // onChange={this.handleChange}
-                            />
+                            <Form.Field>
+                                <Radio
+                                    style={{fontSize: '40px'}}
+                                    label='1901'
+                                    name='radioGroup'
+                                    value='1901'
+                                    checked={this.state.value === '1901'}
+                                    onChange={this.handleChange}
+                                />
                             </Form.Field>
                         </Grid.Column>
                         <Grid.Column width={8}>
@@ -72,9 +81,9 @@ class Question1 extends Component {
                                 style={{fontSize: '40px'}}
                                 label='1854'
                                 name='radioGroup'
-                                value='this'
-                                // checked={this.state.value === 'this'}
-                                // onChange={this.handleChange}
+                                value='1854'
+                                checked={this.state.value === '1854'}
+                                onChange={this.handleChange}
                             />
                             </Form.Field>
                         </Grid.Column>
@@ -83,10 +92,11 @@ class Question1 extends Component {
                     <Grid.Column width={16} />
                     <Grid.Row>
                         <Grid.Column>
-                        <Link to="/q2"><Button size='massive' primary>Next</Button></Link>
+                        <Button size='massive' primary onClick={this.handleSubmit}>Next</Button>
                         </Grid.Column>
                     </Grid.Row>                    
                 </Grid>
+                {this.state.next ? <Redirect to="/q2" /> : null}
             </Form>
             
     </Segment>
